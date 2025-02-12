@@ -20,4 +20,5 @@ sed -i '51,5000d' "$input_file_path" && \
 cut -d, --complement -f2,3,4,5 "$input_file_path" > temp.csv && \
 mv temp.csv "$input_file_path" && \
 cp -f "$input_file_path" "/sdcard/$output_filename" && \
-echo "成功: 文件 $output_filename 已保存！"
+echo "成功: 文件 $output_filename 已保存！" && \
+exit 1
