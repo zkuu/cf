@@ -6,7 +6,7 @@ read -p "请输入输入文件名: " input_filename
 # 使用 find 命令查找文件（不区分大小写）
 input_file_path=$(find . -type f -iname "$input_filename" | head -n 1)
 
-if [[ -z "$input_file_path" ]]; then
+if [ -z "$input_file_path" ]; then
     echo "错误: 文件 $input_filename 未找到！"
     exit 1
 fi
